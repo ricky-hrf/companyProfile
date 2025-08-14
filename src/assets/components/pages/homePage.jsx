@@ -1,4 +1,4 @@
-import Navbar from "../layouts/navbar";
+import Navbar from "../organisms/Navbar/main";
 
 const homePage = () => {
   return (
