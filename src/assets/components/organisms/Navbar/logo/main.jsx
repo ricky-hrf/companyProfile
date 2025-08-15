@@ -5,7 +5,7 @@ const Logo = () => {
     <div className="flex">
       <div>
         <Link to="/" className="flex items-center py-4 px-2">
-          <span className="font-bold text-orange-500 dark:text-orange-50 text-xl">seroroProgramming</span>
+          <span className="font-bold text-orange-500 dark:text-orange-50 text-3xl">seroroProgramming</span>
         </Link>
       </div>
     </div>
