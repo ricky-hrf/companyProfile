@@ -1,6 +1,6 @@
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
-import ListItems from './lists';
-import Card from './card';
+import ListItems from '../../../atoms/lists';
+import Card from '../../../molecules/CardList';
 
 const MenuContinue = () => {
   const listContinuous = [
