@@ -17,12 +17,24 @@ const MenuInvest = () => {
     <ListItems
       isi="Highlights"
       icon={<HiChevronDown className="text-lg" />}
+      isOpen={openIndex === 1}
       onToggle={() => handleToggle(1)}
     >
       <ListItems isi="Operational Highlight"></ListItems>
       <ListItems isi="Financial Highlight"></ListItems>
     </ListItems>,
-    <ListItems isi="Investor Publications" icon={<HiChevronDown className="text-lg" />} />,
+    <ListItems
+      isi="Investor Publications"
+      icon={<HiChevronDown className="text-lg" />}
+      isOpen={openIndex === 2}
+      onToggle={()=>handleToggle(2)}
+    >
+      <ListItems isi="Annual Reports"/>
+      <ListItems isi="Financial Reports"/>
+      <ListItems isi="Presentations"/>
+      <ListItems isi="Corporate Newsletters"/>
+      <ListItems isi="Flash News"/>
+    </ListItems>,
     <ListItems isi="Bonds" />,
     <ListItems isi="Cradit Ratings" />,
     <ListItems isi="Investor Relation Events" />,
