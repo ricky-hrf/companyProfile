@@ -1,5 +1,6 @@
 import Daftar from '../../../atoms/lists';
 import Card from '../../../molecules/CardList';
+import CardListMobile from '../../../molecules/CardListMobile';
 
 const MenuAbout = () => {
   const item = [
@@ -12,7 +13,7 @@ const MenuAbout = () => {
   ];
   return (
     <div className="hidden md:flex items-center">
-      <Card judul="Tentang kami" lists={ item} />
+      <Card judul="Tentang kami" lists={item} />
     </div>
   );
 }

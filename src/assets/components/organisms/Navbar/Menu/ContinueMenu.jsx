@@ -61,7 +61,7 @@ const MenuContinue = () => {
   ];
   return (
     <div className="hidden md:flex items-center">
-      <Card judul="Keberlanjutan" lists={listContinuous} />
+      <Card judul="Keberlanjutan" lists={listContinuous} posisi="right-0"/>
   </div>
   );
 } 
