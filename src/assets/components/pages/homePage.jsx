@@ -11,13 +11,21 @@ const homePage = () => {
       <div className="min-h-screen bg-orange-50 md:grid grid-cols-2">
         <div className="h-full">
         </div>
-        <div className="h-screen p-6 flex flex-col gap-4 justify-center items-center ">
+        <div className="min-h-screen p-6 flex flex-col gap-4 justify-center items-center ">
           <div className="p-6">
             <span className="text-md text-orange-400 md:text-lg font-semibold mb-2">LOREM IPSUM</span>
             <h1 className="text-2xl md:text-4xl text-orange-950 font-semibold mb-4">Lorem ipsum dolor sit amet consectetur.</h1>
             <p className="text-md md:text-lg text-justify mt-4 text-orange-950">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quia culpa exercitationem assumenda hic consectetur sunt labore sequi doloremque esse. Similique quia doloribus magni quasi voluptates possimus et reprehenderit, officiis veniam, ipsum est fugit facilis delectus dolore vitae, optio molestias consectetur. Dignissimos voluptatibus nobis perspiciatis maxime tempora dolor, iste quasi!</p>
           </div>
-          <Tombol icon={<HiArrowRight className="text-lg" />}></Tombol>
+          <Tombol icon={<HiArrowRight className="text-lg" />} text="Selengkapnya"></Tombol>
+        </div>
+      </div>
+      <div className="min-h-screen  md:grid grid-cols-2 bg-[url(../public/bg2.jpg)] bg-cover bg-center w-full">
+        <div className="flex items-center p-2">
+          <div className="flex flex-col">
+            <div className="">Sekilas</div>
+            <Tombol icon={<HiArrowRight className="text-lg" />} text="Selengkapnya" color="bg-orange-500"></Tombol>
+          </div>
         </div>
       </div>
     </div>
