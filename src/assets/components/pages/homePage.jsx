@@ -45,6 +45,37 @@ const homePage = () => {
           </div>
         </div>
       </div>
+      <div className="min-h-screen md:h-screen bg-orange-50 flex flex-col">
+        <div className="flex-1 md:flex flex-row">
+          <div className="flex-[4] flex flex-col justify-center p-6">
+            <span className="text-sm text-orange-400 md:text-md font-semibold mb-2">LOREM IPSUM 500</span>
+            <div className="text-xl md:text-2xl font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vel.</div>
+            </div>
+          <div className="flex-[4] flex items-center justify-center p-6 text-amber-950 font-semibold text-justify">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, maiores eveniet reiciendis quam magni sed cupiditate unde maxime possimus nesciunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, inventore cumque nulla repellendus nostrum nobis, ex, laboriosam voluptates quae nam laborum consequatur expedita beatae ullam dolor tenetur optio aliquam dignissimos.
+            </div>
+          <div className="flex-[2] flex items-center justify-center">
+            <Tombol icon={<HiArrowRight className="text-lg" />} text="Selengkapnya"></Tombol>
+            </div>
+        </div>
+        <div className="flex-1 md:border-t-2 border-orange-100 md:flex flex-row gap-4 pt-8 px-4">
+          <div className="flex-1 p-4">
+            <div className="text-sm md:text-md font-semibold text-amber-950 mb-4">PENDAPATAN</div>
+            <div className="text-5xl font-semibold text-amber-950">USD 10,45 Juta</div>
+            <p className="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ratione.</p>
+          </div>
+          <div className="flex-1 p-4">
+            <div className="text-sm md:text-md font-semibold text-amber-950 mb-4">TOTAL LABA</div>
+            <div className="text-5xl font-semibold text-amber-950">USD 50 Ribu</div>
+            <p className="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ratione.</p>
+          </div>
+          <div className="flex-1 p-4">
+            <div className="text-sm md:text-md font-semibold text-amber-950 mb-4">RISK RATING</div>
+            <div className="text-5xl font-semibold text-amber-950 mb-2">8,93</div>
+            <span className="text-2xl font-semibold text-amber-950">(Low Risk)</span>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   )
