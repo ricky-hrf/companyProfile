@@ -12,16 +12,7 @@ import CardListMobile from "../../molecules/CardListMobile";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
   const [show, setShow] = useState(true);
-
-  useEffect(() => {
-  if (darkMode) {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-  }
-}, [darkMode]);
 
   function handleClick() {
     setOpen(!open);
@@ -60,7 +51,7 @@ const Navbar = () => {
             </div>
             <div className="flex gap-2">
               {iconStyle(HiSearch)}
-              {iconStyle(HiMoon, '',setDarkMode)}
+              {iconStyle(HiMoon)}
               { iconStyle(HiMenu, '', handleClick,"md:hidden") }
             </div>
           </div>

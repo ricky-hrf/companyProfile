@@ -2,6 +2,7 @@ import Navbar from "../organisms/Navbar/main";
 import Tombol from '../atoms/button';
 import { HiArrowRight } from "react-icons/hi";
 import Footer from '../organisms/footer';
+import ContentSection5 from "../organisms/ContentSection5";
 
 const homePage = () => {
   return (
@@ -76,6 +77,7 @@ const homePage = () => {
           </div>
         </div>
       </div>
+      <ContentSection5 />
       <Footer />
     </div>
   )
