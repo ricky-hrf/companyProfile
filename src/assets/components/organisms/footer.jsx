@@ -25,10 +25,10 @@ const footer = () => {
   ]
 
   const icon = [
-    <FiGithub className="text-lg" />,
-    <FiFacebook className="text-lg" />,
-    <FiInstagram className="text-lg" />,
-    <FiLinkedin className="text-lg" />
+    <FiGithub className="text-xs md:text-lg " />,
+    <FiFacebook className="text-xs md:text-lg " />,
+    <FiInstagram className="text-xs md:text-lg " />,
+    <FiLinkedin className="text-xs md:text-lg " />
   ];
 
   return (
@@ -52,19 +52,16 @@ const footer = () => {
       <div className="flex-2 border-t border-orange-200 flex justify-between p-8 flex-col md:flex-row gap-4">
         <div className="flex justify-between items-center gap-8 px-8 text-center">
           {icon.map((el, index) => (
-            <div className="h-10 w-10 rounded-full border border-orange-300 flex justify-center items-center hover:bg-orange-950 hover:text-orange-100 cursor-pointer " key={index}>
+            <div className="h-5 w-5 md:h-10  md:w-10 rounded-full border border-orange-300 flex justify-center items-center hover:bg-orange-950 hover:text-orange-100 cursor-pointer " key={index}>
               {el}
             </div>
           ))}
         </div>
-        <div className="flex justify-center items-center font-serif text-orange-950 gap-4 text-sm">
+        <div className="flex flex-col font-serif text-orange-950 gap-4 md:text-sm text-xs">
           <span> &copy;Copyright PT Sumber Berkah(Persero)2025. All Right Reserved.</span>
-          <div className="">
-            /<span className="ml-2 cursor-pointer hover:underline hover:text-orange-900">Kebijakan Privasi</span>
-          </div>
-          <div className="">
-            /<span className="ml-2 cursor-pointer hover:underline hover:text-orange-900">Waspada Penipuan</span>
-          </div>
+            <div className="">
+            / <span className="hover:underline hover:text-orange-900 cursor-pointer">Kebijakan Privasi</span> / <span className="hover:underline hover:text-orange-900 cursor-pointer">Waspada Penipuan</span>
+            </div>
         </div>
       </div>
     </div>

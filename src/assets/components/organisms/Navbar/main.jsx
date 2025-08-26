@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <div className="">
       <div className="max-w-6xl mx-auto px-2">
-        <div className={`fixed top-0 left-0 w-full px-4 bg-orange-50 shadow-xl transition-transform duration-300 ${show ? "translate-y-0" : "-translate-y-full"} z-999`}>
+        <div className={`fixed top-0 left-0 w-full px-4 bg-orange-50 shadow-xl transition-transform duration-300 ${show ? "translate-y-0" : "-translate-y-full"} z-[999]`}>
           <div className="flex justify-between items-center">
             <Logo />
             <div className="hidden md:flex">
