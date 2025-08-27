@@ -1,10 +1,13 @@
 import Navbar from "../organisms/Navbar/main";
 import Tombol from '../atoms/button';
-import { HiArrowRight } from "react-icons/hi";
+import { HiArrowRight, HiArrowNarrowLeft, HiArrowNarrowRight } from "react-icons/hi";
 import Footer from '../organisms/footer';
+import ContentSection3 from "../organisms/ContentSection3";
 import ContentSection5 from "../organisms/ContentSection5";
 import ContentSection6 from "../organisms/ContentSection6";
 import Paragraf from "../molecules/Paragraf";
+import Content from "../molecules/content";
+import iconStyle from "../atoms/icon";
 
 const homePage = () => {
   const isiParagraf =
@@ -14,12 +17,26 @@ const homePage = () => {
     'isi': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, maiores eveniet reiciendis quam magni sed cupiditate unde maxime possimus nesciunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, inventore cumque nulla repellendus nostrum nobis, ex, laboriosam voluptates quae nam laborum consequatur expedita beatae ullam dolor tenetur optio aliquam dignissimos.',
       'tombol' : <Tombol icon={<HiArrowRight className="text-lg" />} text="Selengkapnya"></Tombol>
   }
+  const isiConten = {
+    'judulKecil': "SEKILAS LOREM IPSUM",
+    'judul': "The code you write makes you a programmer. The code you delete makes you a good one. The code you don't have to write makes you a great one.",
+    'tombol-pertama': <Tombol icon={<HiArrowRight className="text-lg" />} text="Selengkapnya" color="text-orange-50"></Tombol>,
+  }
   
   return (
     <div className="bg-orange-50">
       <div className="relative h-screen bg-[url(../public/background.jpg)] bg-cover bg-center w-full">
-        <div className="absolute inset-0 bg-black/10">
+        <div className="absolute inset-0 bg-black/50 px-8">
           <Navbar />
+          <div className="flex">
+            <Content isiContent={isiConten} />
+            <div className="relative flex-1">
+              <div className="absolute bottom-5 right-30 md:bottom-10 md:right-10 flex gap-10">
+                {iconStyle(HiArrowNarrowLeft, "text-orange-50","","border-2 border-orange-50 hover:bg-orange-400")}
+                {iconStyle(HiArrowNarrowRight, "text-orange-50","","border-2 border-orange-50 hover:bg-orange-400")}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="min-h-screen bg-orange-50 md:grid grid-cols-2">
@@ -34,28 +51,7 @@ const homePage = () => {
           <Tombol icon={<HiArrowRight className="text-lg" />} text="Selengkapnya"></Tombol>
         </div>
       </div>
-      <div className="relative min-h-screen  md:grid grid-cols-2 bg-[url(../public/bg2.jpg)] bg-cover bg-center w-full bg-opacity-100">
-        <div class="absolute inset-0 bg-black/50">
-          <div className="flex">
-            <div className="md:w-1/2 min-h-screen flex items-center p-6">
-              <div className="flex flex-col gap-4">
-                <div className="text-orange-50 font-semibold text-sm md:text-md">SEKILAS LOREM IPSUM</div>
-                <div className="text-orange-50 font-bold text-2xl md:text-3xl">Tentang Kami</div>
-                <div className="text-orange-50 mb-8 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolor vero repellat maxime ab, vel neque adipisci, cupiditate sit numquam fugiat blanditiis suscipit expedita eaque quidem. Rem suscipit pariatur magnam!</div>
-                <div className="relative">
-                  <div className="absolute">
-                    <div className="flex flex-col lg:flex-row gap-4 text-left">
-                      <Tombol icon={<HiArrowRight className="text-lg" />} text="Selengkapnya" color="text-orange-50"></Tombol>
-                      <Tombol icon={<HiArrowRight className="text-lg" />} text="Direksi dan Komisaris" color="text-orange-50"></Tombol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hidden md:flex"></div>
-          </div>
-        </div>
-      </div>
+      <ContentSection3 />
       <div className="min-h-screen md:h-screen bg-orange-50 flex flex-col">
         <Paragraf data={isiParagraf} />
         <div className="flex-1 md:border-t-2 border-orange-100 md:flex flex-row gap-4 pt-8 px-4">
