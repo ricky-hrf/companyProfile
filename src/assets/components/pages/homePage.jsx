@@ -5,11 +5,13 @@ import Footer from '../organisms/footer';
 import ContentSection3 from "../organisms/ContentSection3";
 import ContentSection5 from "../organisms/ContentSection5";
 import ContentSection6 from "../organisms/ContentSection6";
+import ContentSection7 from "../organisms/ContentSection7";
 import Paragraf from "../molecules/Paragraf";
 import Content from "../molecules/content";
 import iconStyle from "../atoms/icon";
+import { useState } from "react";
 
-const homePage = () => {
+const HomePage = () => {
   const isiParagraf =
     {
       'judul': 'LOREM IPSUM 500',
@@ -19,21 +21,42 @@ const homePage = () => {
   }
   const isiConten = {
     'judulKecil': "SEKILAS LOREM IPSUM",
-    'judul': "The code you write makes you a programmer. The code you delete makes you a good one. The code you don't have to write makes you a great one.",
-    'tombol-pertama': <Tombol icon={<HiArrowRight className="text-lg" />} text="Selengkapnya" color="text-orange-50"></Tombol>,
+    'judul': "The code you write makes you a programmer. The code you delete makes you a good one. The code you don't have to write makes you a great one."
   }
+
+  const bg = [
+    {'id':1, 'background':'bg-[url(../public/background.jpg)] bg-cover bg-center'},
+    {'id':2, 'background':'bg-[url(../public/background2.jpg)] bg-cover bg-center'},
+    {'id':3, 'background':'bg-[url(../public/background3.jpg)] bg-cover bg-center'},
+    {'id':4, 'background':'bg-[url(../public/background4.jpg)] bg-cover bg-center'}
+  ]
+
+  const [bgCurrent, setBgCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setBgCurrent((prev) => (prev + 1) % bg.length);
+  };
+
+  const prevSlide = () => {
+    setBgCurrent((prev) => (prev - 1 + bg.length) % bg.length);
+  };
   
   return (
+    // bg-[url(../public/background.jpg)]
     <div className="bg-orange-50">
-      <div className="relative h-screen bg-[url(../public/background.jpg)] bg-cover bg-center w-full">
+      <div className={`relative h-screen ${bg[bgCurrent].background} bg-cover bg-center w-full`}>
         <div className="absolute inset-0 bg-black/50 px-8">
           <Navbar />
           <div className="flex">
             <Content isiContent={isiConten} />
             <div className="relative flex-1">
               <div className="absolute bottom-5 right-30 md:bottom-10 md:right-10 flex gap-10">
-                {iconStyle(HiArrowNarrowLeft, "text-orange-50","","border-2 border-orange-50 hover:bg-orange-400")}
-                {iconStyle(HiArrowNarrowRight, "text-orange-50","","border-2 border-orange-50 hover:bg-orange-400")}
+                <div onClick={prevSlide} className="">
+                  {iconStyle(HiArrowNarrowLeft, "text-orange-50","","border-2 border-orange-50 hover:bg-orange-400")}
+                </div>
+                <div onClick={nextSlide} className="">
+                  {iconStyle(HiArrowNarrowRight, "text-orange-50","","border-2 border-orange-50 hover:bg-orange-400")}
+                </div>
               </div>
             </div>
           </div>
@@ -74,8 +97,9 @@ const homePage = () => {
       </div>
       <ContentSection5 />
       <ContentSection6 />
+      <ContentSection7 />
       <Footer />
     </div>
   )
 }
-export default homePage;
+export default HomePage;
