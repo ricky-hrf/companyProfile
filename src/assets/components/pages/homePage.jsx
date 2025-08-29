@@ -10,7 +10,7 @@ import ContentSection8 from "../organisms/ContentSection8";
 import Paragraf from "../molecules/Paragraf";
 import Content from "../molecules/content";
 import iconStyle from "../atoms/icon";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const HomePage = () => {
   const isiParagraf =
@@ -42,8 +42,14 @@ const HomePage = () => {
     setBgCurrent((prev) => (prev - 1 + bg.length) % bg.length);
   };
   
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [nextSlide]);
+  
   return (
-    // bg-[url(../public/background.jpg)]
     <div className="bg-orange-50">
       <div className={`relative h-screen ${bg[bgCurrent].background} bg-cover bg-center w-full`}>
         <div className="absolute inset-0 bg-black/50 px-8">
