@@ -13,19 +13,19 @@ const ContentSection7 = () => {
 
   const isiCard = [
     {
-    'background': "bg-amber-500",
+    'background': "bg-[url(../public/background3.jpg)] bg-cover bg-center",
     'judulArtikel': 'Judul Artikel 1',
       'paragraf': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit',
     'tombol':<Tombol icon={<HiArrowRight className="text-lg" />} text="Selengkapnya" color="text-orange-950"></Tombol>
     },
     {
-    'background': "bg-amber-400",
+    'background': "bg-[url(../public/background4.jpg)] bg-cover bg-center",
     'judulArtikel': 'Judul Artikel 2',
       'paragraf': 'Lorem ipsum dolor sit amet adipisicing elit. Quasi, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit',
     'tombol': <Tombol icon={<HiArrowRight className="text-lg" />} text="Selengkapnya" color="text-orange-950"></Tombol>
     },
     {
-    'background': "bg-amber-700",
+    'background': "bg-[url(../public/background5.jpg)] bg-cover bg-center",
     'judulArtikel': 'Judul Artikel 3',
       'paragraf': 'Lorem  Quasi, officia. Lorem ipsum dolor sit amet',
     'tombol': <Tombol icon={<HiArrowRight className="text-lg" />} text="Selengkapnya" color="text-orange-950"></Tombol>

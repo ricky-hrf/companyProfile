@@ -6,6 +6,7 @@ import ContentSection3 from "../organisms/ContentSection3";
 import ContentSection5 from "../organisms/ContentSection5";
 import ContentSection6 from "../organisms/ContentSection6";
 import ContentSection7 from "../organisms/ContentSection7";
+import ContentSection8 from "../organisms/ContentSection8";
 import Paragraf from "../molecules/Paragraf";
 import Content from "../molecules/content";
 import iconStyle from "../atoms/icon";
@@ -98,6 +99,7 @@ const HomePage = () => {
       <ContentSection5 />
       <ContentSection6 />
       <ContentSection7 />
+      <ContentSection8 />
       <Footer />
     </div>
   )

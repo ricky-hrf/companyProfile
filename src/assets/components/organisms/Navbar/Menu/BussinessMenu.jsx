@@ -11,18 +11,19 @@ const Bussiness = () => {
   };
 
   const listBussiness = [
-    <ListItem isi="lorem ipsum" lengkungan="rounded-t-md" />,
+    <ListItem isi="Edutech" lengkungan="rounded-t-md" />,
     <ListItem
       isi="Subholding"
       icon={<HiChevronDown className="text-lg" />}
       isOpen={openIndex === 1}
       onToggle={() => handleToggle(1)}
     >
-      <ListItem isi="Upstream Subholding" />
-      <ListItem isi="Gas Subholding" />
-      <ListItem isi="Power & NRE Subholding" />
-      <ListItem isi="Comercial & Trading Subholding" />
-      <ListItem isi="Integrated Marine Logistik Subholding" />
+      <ListItem isi="Kursus Pemrograman" />
+      <ListItem isi="Kursus Desain & Multimedia" />
+      <ListItem isi="Kursus Jaringan & Keamanan" />
+      <ListItem isi="Hardware & Perakitan" />
+      <ListItem isi="ertifikasi & Ujian Kompetensi" />
+      <ListItem isi="Edutech & Produk Digital" />
     </ListItem>,
     <ListItem
       isi="AP & Services"
@@ -30,10 +31,12 @@ const Bussiness = () => {
       isOpen={openIndex === 2}
       onToggle={() => handleToggle(2)}
     >
-      <ListItem isi="Service A" />
-      <ListItem isi="Service B" />
-      <ListItem isi="Service C" />
-      <ListItem isi="Service D" />
+      <ListItem isi="Software Development Training" />
+      <ListItem isi="Network & Cybersecurity Training" />
+      <ListItem isi="Data Science & AI Training" />
+      <ListItem isi="Multimedia & Design Training" />
+      <ListItem isi="Office Productivity Training" />
+      <ListItem isi="Computer Hardware & IoT Training" />
     </ListItem>,
     <ListItem isi="Global Presence" lengkungan="rounded-b-md" />
   ];

@@ -12,7 +12,7 @@ const footer = () => {
     },
     {
       "judul": "AP & Services",
-      "isi" : ['PT Lorem Bahan Berkah','PT Sumber Utama','PT Rejeki Anak Sholeh', 'PT Maju Jaya', 'PT Milik Pribadi', 'PT Sukses Selalu', 'Tbk']
+      "isi" : ['Software Development Training','Network & Cybersecurity Training','Data Science & AI Training', 'Multimedia & Design Training', 'Office Productivity Training', 'Computer Hardware & IoT Training']
     },
     {
       "judul": "Tools",
