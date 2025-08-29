@@ -44,10 +44,10 @@ const HomePage = () => {
   
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
+      setBgCurrent((prev) => (prev + 1) % bg.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, [nextSlide]);
+  }, [bg.length]);
   
   return (
     <div className="bg-orange-50">
