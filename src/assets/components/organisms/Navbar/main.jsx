@@ -1,4 +1,4 @@
-import { HiMenu,HiMoon, HiSearch } from "react-icons/hi";
+import { HiMenu} from "react-icons/hi";
 import Logo from "./logo/main";
 import MenuAbout from "./Menu/Main";
 import MenuBussiness from "./Menu/BussinessMenu";
@@ -50,8 +50,6 @@ const Navbar = () => {
               <MenuContinue/>
             </div>
             <div className="flex gap-2">
-              {iconStyle(HiSearch)}
-              {iconStyle(HiMoon)}
               { iconStyle(HiMenu, '', handleClick,"md:hidden") }
             </div>
           </div>

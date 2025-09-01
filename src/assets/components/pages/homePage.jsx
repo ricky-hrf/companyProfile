@@ -7,6 +7,7 @@ import ContentSection5 from "../organisms/ContentSection5";
 import ContentSection6 from "../organisms/ContentSection6";
 import ContentSection7 from "../organisms/ContentSection7";
 import ContentSection8 from "../organisms/ContentSection8";
+import ContentSection9 from "../organisms/ContentSection9";
 import Paragraf from "../molecules/Paragraf";
 import Content from "../molecules/content";
 import iconStyle from "../atoms/icon";
@@ -34,6 +35,7 @@ const HomePage = () => {
 
   const [bgCurrent, setBgCurrent] = useState(0);
 
+
   const nextSlide = () => {
     setBgCurrent((prev) => (prev + 1) % bg.length);
   };
@@ -45,12 +47,12 @@ const HomePage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setBgCurrent((prev) => (prev + 1) % bg.length);
-    }, 3000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [bg.length]);
   
   return (
-    <div className="bg-orange-50">
+    <div className="bg-orange-50 transition-colors">
       <div className={`relative h-screen ${bg[bgCurrent].background} bg-cover bg-center w-full`}>
         <div className="absolute inset-0 bg-black/50 px-8">
           <Navbar />
@@ -106,6 +108,7 @@ const HomePage = () => {
       <ContentSection6 />
       <ContentSection7 />
       <ContentSection8 />
+      <ContentSection9 />
       <Footer />
     </div>
   )

@@ -1,6 +1,6 @@
 import CardGambar from '../molecules/CardGambar';
 
-const contentSection5 = () => {
+const ContentSection5 = () => {
   const dataContent = [
     {
       "judul" : "PROFIL IPSUM",
@@ -31,4 +31,4 @@ const contentSection5 = () => {
     </div>
   );
 }
-export default contentSection5;
+export default ContentSection5;

@@ -1,6 +1,5 @@
 import Daftar from '../../../atoms/lists';
 import Card from '../../../molecules/CardList';
-import CardListMobile from '../../../molecules/CardListMobile';
 
 const MenuAbout = () => {
   const item = [
