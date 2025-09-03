@@ -4,11 +4,11 @@ const footer = () => {
   const data = [
     {
       "judul": "Announcement",
-      "isi" : ['Lorem Info','Pengadaan Umum','Pengumuman','E-Procurement','Hubungan Investor','RUPS','Karir']
+      "isi" : ['Pengadaan Umum','Pengumuman','E-Procurement','Hubungan Investor','RUPS','Karir']
     },
     {
       "judul": "Network",
-      "isi" : ['Subholding Upstream','Subholding Refinery','Lorem, ipsum dolor','Energy','Subholding Gas','Logistics','Commercial & Trading']
+      "isi" : ['Corporate','Training','Administration','Development & Lab','Support & Maintenance','Guest','Security & Surveillance']
     },
     {
       "judul": "AP & Services",
@@ -16,7 +16,7 @@ const footer = () => {
     },
     {
       "judul": "Tools",
-      "isi" : ['i-Serv','Registrasi Lembaga Penyalur','Tata Kelola Perusahaan', 'Keterbukaan Informasi Publik']
+      "isi" : ['i-Serv','Collaboration & Documentation','Tata Kelola Perusahaan', 'Keterbukaan Informasi Publik']
     },
     {
       "judul": "Contact",

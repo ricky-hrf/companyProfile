@@ -89,17 +89,17 @@ const HomePage = () => {
         <div className="flex-1 md:border-t-2 border-orange-100 md:flex flex-row gap-4 pt-8 px-4">
           <div className="flex-1 p-4">
             <div className="text-sm md:text-md font-semibold text-amber-950 mb-4">PENDAPATAN</div>
-            <div className="text-5xl font-semibold text-amber-950">USD 10,45 Juta</div>
+            <div className="text-3xl md:text-5xl font-semibold text-amber-950">USD 10,45 Juta</div>
             <p className="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ratione.</p>
           </div>
           <div className="flex-1 p-4">
             <div className="text-sm md:text-md font-semibold text-amber-950 mb-4">TOTAL LABA</div>
-            <div className="text-5xl font-semibold text-amber-950">USD 50 Ribu</div>
+            <div className="text-3xl md:text-5xl font-semibold text-amber-950">USD 50 Ribu</div>
             <p className="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ratione.</p>
           </div>
           <div className="flex-1 p-4">
             <div className="text-sm md:text-md font-semibold text-amber-950 mb-4">RISK RATING</div>
-            <div className="text-5xl font-semibold text-amber-950 mb-2">8,93</div>
+            <div className="text-3xl md:text-5xl font-semibold text-amber-950 mb-2">8,93</div>
             <span className="text-2xl font-semibold text-amber-950">(Low Risk)</span>
           </div>
         </div>
