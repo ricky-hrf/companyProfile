@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { dataNavbar } from "../../../data/dataNavbar";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const MobileMenu = () => {
   const [openMenu, setOpenMenu] = useState(null);
@@ -37,22 +38,22 @@ const MobileMenu = () => {
                 <div
                   key={j}
                   className="py-2">
-                  <div onClick={() => handleClickSubMenu(index, j)} className="flex justify-between">
+                  <Link to={subMenu.path} onClick={() => handleClickSubMenu(index, j)} className="flex justify-between">
                     <span>{subMenu.title}</span>
                     {subMenu.children && (
                       <div className="text-md">
                         {openSubMenu[index] === j ? (<HiChevronUp />): (<HiChevronDown />)}
                       </div>
                     )}
-                  </div>
-                  {subMenu.children && openSubMenu[index] === j && (
-                    <div className="px-4 py-2">
+                  </Link>
+                  {subMenu.children && openSubMenu[index] === j && subMenu.path (
+                    <Link className="px-4 py-2">
                       {subMenu.children.map((list, k) => (
                         <div key={k} className="p-2">
                           <span>{ list.title }</span>
                         </div>
                       ))}
-                    </div>
+                    </Link>
                   )}
                 </div>
               ))}

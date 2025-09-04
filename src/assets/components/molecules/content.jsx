@@ -1,4 +1,6 @@
-const Content = ({isiContent}) => {
+import { Link } from "react-router-dom";
+
+const Content = ({ isiContent }) => {
   return (
     <div className="md:w-1/2 min-h-screen flex items-center p-6 font-serif">
       <div className="flex flex-col gap-4">
@@ -8,8 +10,9 @@ const Content = ({isiContent}) => {
               <div className="relative">
                   <div className="absolute">
                     <div className="flex flex-col lg:flex-row gap-4 text-left">
-                    {isiContent["tombol-pertama"]}
-                    {isiContent["tombol-kedua"]}
+              <Link to="/tentang-kami#sejarah">
+                {isiContent["tombol-pertama"]}
+              </Link>
                     </div>
                   </div>
               </div>

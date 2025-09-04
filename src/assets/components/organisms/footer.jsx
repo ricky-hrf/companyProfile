@@ -32,7 +32,7 @@ const footer = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col px-8 w-full">
+    <div className="min-h-screen flex flex-col px-8 w-full bg-orange-50 py-2">
       <div className="flex-2 flex flex-col justify-center items-center gap-2 font-serif sm:py-4 sm:border-b border-orange-100">
         <span className="text-center"><b>Alamat:</b> Graha Lorem Ipsum, Jl. Jalani Aja Dulu No.11-13, Gotham City 8678 Konoha</span>
         <span><b>Email:</b> infopublik@lorem.com</span>

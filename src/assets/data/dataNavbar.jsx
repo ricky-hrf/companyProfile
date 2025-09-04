@@ -4,27 +4,19 @@ export const dataNavbar = [
     children: [
       {
         title: "Sekilas Tentang Kami",
-        path: "/about"
+        path: "/tentang-kami"
       },
       {
         title: "Sejarah",
-        path: "/sejarah"
+        path: "/tentang-kami#sejarah"
       },
       {
         title: "Visi & Misi",
-        path: "/visimisi"
+        path: "/tentang-kami#vimi"
       },
       {
         title: "Struktur Organisasi",
-        path: "/struktur"
-      },
-      {
-        title: "Dewan Direksi",
-        path: "/direksi"
-      },
-      {
-        title: "Dewan Komisaris",
-        path: "/komisaris"
+        path: "/tentang-kami#struktur"
       }
     ]
   },

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { dataNavbar } from "../../../data/dataNavbar";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const DesktopMenu = () => {
   const [openSubMenu, setOpenSubMenu] = useState(null);
@@ -22,7 +23,7 @@ const DesktopMenu = () => {
               {item.children.map((list, j) => (
                 <div key={j} className="py-2 px-4 hover:bg-orange-100 cursor-pointer rounded-md">
                   <div onClick={() => tombolSubMenu(j)} className="flex flex-col justify-between">
-                    <div className="flex justify-between">
+                    <Link to={list.path} className="flex justify-between">
                       <span className="text-orange-950 text-md font-semibold">
                         {list.title}
                       </span>
@@ -31,7 +32,7 @@ const DesktopMenu = () => {
                           {openSubMenu === j ? (<HiChevronUp/>):(<HiChevronDown />)}
                           </div>
                         )}
-                    </div>
+                    </Link>
                     {list.children && openSubMenu === j && (
                       <div className="flex flex-col mt-2 ml-4">
                         {list.children.map((isi, k) => (
