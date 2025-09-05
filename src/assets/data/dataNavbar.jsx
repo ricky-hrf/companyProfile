@@ -25,7 +25,7 @@ export const dataNavbar = [
     children: [
       {
         title: "Edutech",
-        path: "/edutech"
+        path: "/bisnis-kami#edutech"
       },
       {
         title: "Subholding",
@@ -87,7 +87,7 @@ export const dataNavbar = [
       },
       {
         title: "Global Presence",
-        path: "/"
+        path: "/bisnis-kami#presence"
       }
     ]
   },

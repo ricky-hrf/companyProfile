@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css'
 import HomePage from './assets/components/pages/homePage';
 import TentangKami from './assets/components/pages/TentangKami';
+import BisnisKami from './assets/components/pages/BisnisPage';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const rute = createBrowserRouter([
@@ -13,6 +14,10 @@ const rute = createBrowserRouter([
   {
     path: "/tentang-kami",
     element: <TentangKami />,
+  },
+  {
+    path: "/bisnis-kami",
+    element: <BisnisKami />,
   }
 ])
 
