@@ -14,49 +14,58 @@ const ContentSection9 = () => {
     {
       'kategori':'SIARAN PERS',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo?',
-      'tanggal': '29 Agustus 2025'
+      'tanggal': '29 Agustus 2025',
+      'bg': 'bg-orange-400'
     },
     {
       'kategori':'SIARAN PERS',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo?',
-      'tanggal': '29 Agustus 2025'
+      'tanggal': '29 Agustus 2025',
+      'bg': 'bg-orange-400'
     },
     {
       'kategori':'SIARAN PERS',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo?',
-      'tanggal': '29 Agustus 2025'
+      'tanggal': '29 Agustus 2025',
+      'bg': 'bg-orange-400'
     },
     {
       'kategori':'SIARAN PERS',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo?',
-      'tanggal': '29 Agustus 2025'
+      'tanggal': '29 Agustus 2025',
+      'bg': 'bg-orange-400'
     },
     {
       'kategori':'SIARAN PERS',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo?',
-      'tanggal': '29 Agustus 2025'
+      'tanggal': '29 Agustus 2025',
+      'bg': 'bg-orange-400'
     }
   ]
   const dataBerita = [
     {
       'kategori': 'BERITA',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo',
-      'tanggal': '1 September 2025'
+      'tanggal': '1 September 2025',
+      'bg': 'bg-amber-400'
     },
     {
       'kategori': 'BERITA',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo',
-      'tanggal': '1 September 2025'
+      'tanggal': '1 September 2025',
+      'bg': 'bg-amber-400'
     },
     {
       'kategori': 'BERITA',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo',
-      'tanggal': '1 September 2025'
+      'tanggal': '1 September 2025',
+      'bg': 'bg-amber-400'
     },
     {
       'kategori': 'BERITA',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo',
-      'tanggal': '1 September 2025'
+      'tanggal': '1 September 2025',
+      'bg': 'bg-amber-400'
     }
   ];
 
@@ -64,27 +73,32 @@ const ContentSection9 = () => {
     {
       'kategori': 'BERITA TEKNOLOGI',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo',
-      'tanggal': '1 September 2025'
+      'tanggal': '1 September 2025',
+      'bg':'bg-amber-300'
     },
     {
       'kategori': 'BERITA TEKNOLOGI',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo',
-      'tanggal': '1 September 2025'
+      'tanggal': '1 September 2025',
+      'bg':'bg-amber-300'
     },
     {
       'kategori': 'BERITA TEKNOLOGI',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo',
-      'tanggal': '1 September 2025'
+      'tanggal': '1 September 2025',
+      'bg':'bg-amber-300'
     },
     {
       'kategori': 'BERITA TEKNOLOGI',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo',
-      'tanggal': '1 September 2025'
+      'tanggal': '1 September 2025',
+      'bg':'bg-amber-300'
     },
     {
       'kategori': 'BERITA TEKNOLOGI',
       'judul': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, illo',
-      'tanggal': '1 September 2025'
+      'tanggal': '1 September 2025',
+      'bg':'bg-amber-300'
     }
   ];
 
@@ -190,7 +204,7 @@ const ContentSection9 = () => {
         </div>
         {activeCategory === "news" ? (
           <div className="md:min-h-screen p-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="relative h-75 md:h-full rounded-xl shadow-2xl px-4 md:px-8">
+            <div className={`relative h-75 ${cardNews[0].bg} md:h-full rounded-xl shadow-2xl px-4 md:px-8`}>
               <div className="absolute bottom-10 text-xs">
                 <span className="">{cardNews[0].kategori}</span>
                 <h1 className="font-bold text-md md:text-xl lg:text-2xl">{ cardNews[0].judul}</h1>
@@ -204,7 +218,7 @@ const ContentSection9 = () => {
               {cardNews.slice(1).map((item, index) => (
                 <div
                   key={index}
-                  className="relative h-75 md:h-full rounded-xl shadow-2xl px-8">
+                  className={`relative h-75 ${item.bg} md:h-full rounded-xl shadow-2xl px-8`}>
                 <div className="absolute bottom-10">
                 <span className="text-sm">{item.kategori}</span>
                 <h1 className="font-bold text-sm md:text-md lg:text-lg">{item.judul}</h1>

@@ -36,9 +36,9 @@ const DesktopMenu = () => {
                     {list.children && openSubMenu === j && (
                       <div className="flex flex-col mt-2 ml-4">
                         {list.children.map((isi, k) => (
-                          <div className="text-orange-950 p-2 hover:bg-orange-50 hover:text-orange-800 rounded-md" key={k}>
+                          <Link to={isi.path} className="text-orange-950 p-2 hover:bg-orange-50 hover:text-orange-800 rounded-md" key={k}>
                             <span>{isi.title}</span>
-                          </div>
+                          </Link>
                         ))}
                       </div>
                   )}

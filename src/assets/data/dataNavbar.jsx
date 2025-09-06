@@ -32,27 +32,33 @@ export const dataNavbar = [
         children: [
           {
             title: "Kursus Pemrograman",
-            path: "/#"
+            path: "/bisnis-kami#subholding",
+            background: "bg-slate-600"
           },
           {
             title: "Kursus Desain & Multimedia",
-            path: "/#"
+            path: "/bisnis-kami#subholding",
+            background: "bg-slate-600"
           },
           {
             title: "Kursus Jaringan & Keamanan",
-            path: "/#"
+            path: "/bisnis-kami#subholding",
+            background: "bg-slate-600"
           },
           {
             title: "Hardware & Perakitan",
-            path: "/#"
+            path: "/bisnis-kami#subholding",
+            background: "bg-slate-600"
           },
           {
             title: "Sertifikasi & Ujian Kompetensi",
-            path: "/#"
+            path: "/bisnis-kami#subholding",
+            background: "bg-slate-600"
           },
           {
             title: "Edutech & Produk Digital",
-            path: "/#"
+            path: "/bisnis-kami#subholding",
+            background: "bg-slate-600"
           }
         ]
       },
@@ -61,27 +67,33 @@ export const dataNavbar = [
         children: [
           {
             title: "Software Development Training",
-            path: "/"
+            path: "/bisnis-kami#services",
+            background: "bg-slate-700"
           },
           {
             title: "Network & Cybersecurity Training",
-            path: "/"
+            path: "/bisnis-kami#services",
+            background: "bg-slate-700"
           },
           {
             title: "Data Science & AI Training",
-            path: "/"
+            path: "/bisnis-kami#services",
+            background: "bg-slate-700"
           },
           {
             title: "Multimedia & Design Training",
-            path: "/"
+            path: "/bisnis-kami#services",
+            background: "bg-slate-700"
           },
           {
             title: "Office Productivity Training",
-            path: "/"
+            path: "/bisnis-kami#services",
+            background: "bg-slate-700"
           },
           {
             title: "Computer Hardware & IoT Training",
-            path: "/"
+            path: "/bisnis-kami#services",
+            background: "bg-slate-700"
           }
         ]
       },
@@ -96,26 +108,26 @@ export const dataNavbar = [
     children: [
       {
         title: "General Overview",
-        path: "/"
+        path: "/hubungan-investor"
       },
       {
         title: "CEO Message",
-        path: "/"
+        path: "/hubungan-investor#"
       },
       {
         title: "Shareholders",
-        path: "/"
+        path: "/hubungan-investor#"
       },
       {
         title: "Highlights",
         children: [
           {
             title: "Operational Highlight",
-            path: "/"
+            path: "/Highlights"
           },
           {
             title: "Financial Highlight",
-            path: "/"
+            path: "/Highlights"
           }
         ]
       },
@@ -124,41 +136,41 @@ export const dataNavbar = [
         children: [
           {
             title: "Annual Reports",
-            path:"/"
+            path:"/notFound"
           },
           {
             title: "Financial Reports",
-            path:"/"
+            path:"/notFound"
           },
           {
             title: "Presentations",
-            path:"/"
+            path:"/notFound"
           },
           {
             title: "Corporate Newsletters",
-            path:"/"
+            path:"/notFound"
           },
           {
             title: "Flash News",
-            path:"/"
+            path:"/notFound"
           }
         ]
       },
       {
         title: "Bonds",
-        path:"/"
+        path:"/notFound"
       },
       {
         title: "Cradit Ratings",
-        path:"/"
+        path:"/notFound"
       },
       {
         title: "Investor Relation Events",
-        path:"/"
+        path:"/notFound"
       },
       {
         title: "Point Of Contacts",
-        path:"/"
+        path:"/notFound"
       }
     ]
   },
@@ -167,30 +179,30 @@ export const dataNavbar = [
     children: [
       {
         title: "Seroro News Room",
-        path:"/"
+        path:"/notFound"
       },
       {
         title: "Keterbukaan Informasi Publik",
-        path:"/"
+        path:"/notFound"
       },
       {
         title: "Ruang Media",
         children: [
           {
             title: "Siaran Pers",
-            path:"/"
+            path:"/notFound"
           },
           {
             title: "Update Pendidikan",
-            path:"/"
+            path:"/notFound"
           },
           {
             title: "Berita Teknologi",
-            path:"/"
+            path:"/notFound"
           },
           {
             title: "Galeri",
-            path:"/"
+            path:"/notFound"
           }
         ]
       },
@@ -204,7 +216,7 @@ export const dataNavbar = [
       },
       {
         title: "Pengumuman",
-        path:"/"
+        path:"/notFound"
       }
     ]
   }

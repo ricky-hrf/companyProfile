@@ -12,53 +12,53 @@ const ContentSection8 = () => {
   }
   const dataSubholding = [
     {
-    "background": "bg-amber-500",
+    "background": "bg-orange-500",
     "teks" : "Kursus Pemrograman"
     },
     {
-    "background": "bg-amber-700",
+    "background": "bg-orange-500",
     "teks" : "Kursus Desain & Multimedia"
     },
     {
-    "background": "bg-amber-400",
+    "background": "bg-orange-500",
     "teks" : "Kursus Jaringan & Keamanan"
     },
     {
-    "background": "bg-amber-600",
+    "background": "bg-orange-500",
     "teks" : "Hardware & Perakitan"
     },
     {
-    "background": "bg-amber-300",
+    "background": "bg-orange-500",
     "teks" : "Sertifikasi & Ujian Kompetensi"
     },
     {
-    "background": "bg-amber-800",
+    "background": "bg-orange-500",
     "teks" : "Edutech & Produk Digital"
     }
   ]
   const dataServices = [
     {
-      "background": "bg-orange-600",
+      "background": "bg-amber-500",
       "teks": "Software Development Training"
     },
     {
-      "background": "bg-orange-400",
+      "background": "bg-amber-500",
       "teks": "Network & Cybersecurity Training"
     },
     {
-      "background": "bg-orange-700",
+      "background": "bg-amber-500",
       "teks": "Data Science & AI Training"
     },
     {
-      "background": "bg-orange-400",
+      "background": "bg-amber-500",
       "teks": "Multimedia & Design Training"
     },
     {
-      "background": "bg-orange-600",
+      "background": "bg-amber-500",
       "teks": "Office Productivity Training"
     },
     {
-      "background": "bg-orange-800",
+      "background": "bg-amber-500",
       "teks": "Computer Hardware & IoT Training"
     }
   ];
