@@ -46,14 +46,14 @@ const MobileMenu = () => {
                       </div>
                     )}
                   </Link>
-                  {subMenu.children && openSubMenu[index] === j && subMenu.path (
-                    <Link className="px-4 py-2">
+                  {subMenu.children && openSubMenu[index] === j && (
+                    <div className="flex flex-col px-4 py-2">
                       {subMenu.children.map((list, k) => (
-                        <div key={k} className="p-2">
+                        <Link to={list.path} key={k} className="p-2">
                           <span>{ list.title }</span>
-                        </div>
+                        </Link>
                       ))}
-                    </Link>
+                    </div>
                   )}
                 </div>
               ))}
