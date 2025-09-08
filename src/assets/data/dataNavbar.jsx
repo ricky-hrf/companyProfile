@@ -123,11 +123,11 @@ export const dataNavbar = [
         children: [
           {
             title: "Operational Highlight",
-            path: "/Highlights"
+            path: "/hubungan-investor"
           },
           {
             title: "Financial Highlight",
-            path: "/Highlights"
+            path: "/hubungan-investor"
           }
         ]
       },
@@ -136,41 +136,41 @@ export const dataNavbar = [
         children: [
           {
             title: "Annual Reports",
-            path:"/notFound"
+            path:"/hubungan-investor"
           },
           {
             title: "Financial Reports",
-            path:"/notFound"
+            path:"/hubungan-investor"
           },
           {
             title: "Presentations",
-            path:"/notFound"
+            path:"/hubungan-investor"
           },
           {
             title: "Corporate Newsletters",
-            path:"/notFound"
+            path:"/hubungan-investor"
           },
           {
             title: "Flash News",
-            path:"/notFound"
+            path:"/hubungan-investor"
           }
         ]
       },
       {
         title: "Bonds",
-        path:"/notFound"
+        path:"/hubungan-investor"
       },
       {
         title: "Cradit Ratings",
-        path:"/notFound"
+        path:"/hubungan-investor"
       },
       {
         title: "Investor Relation Events",
-        path:"/notFound"
+        path:"/hubungan-investor"
       },
       {
         title: "Point Of Contacts",
-        path:"/notFound"
+        path:"/hubungan-investor"
       }
     ]
   },
@@ -179,30 +179,30 @@ export const dataNavbar = [
     children: [
       {
         title: "Seroro News Room",
-        path:"/notFound"
+        path:"/media-informasi"
       },
       {
         title: "Keterbukaan Informasi Publik",
-        path:"/notFound"
+        path:"/media-informasi"
       },
       {
         title: "Ruang Media",
         children: [
           {
             title: "Siaran Pers",
-            path:"/notFound"
+            path:"/media-informasi"
           },
           {
             title: "Update Pendidikan",
-            path:"/notFound"
+            path:"/media-informasi"
           },
           {
             title: "Berita Teknologi",
-            path:"/notFound"
+            path:"/media-informasi"
           },
           {
             title: "Galeri",
-            path:"/notFound"
+            path:"/media-informasi"
           }
         ]
       },
@@ -216,7 +216,7 @@ export const dataNavbar = [
       },
       {
         title: "Pengumuman",
-        path:"/notFound"
+        path:"/media-informasi"
       }
     ]
   }
